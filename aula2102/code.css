@@ -1,0 +1,106 @@
+/* Estilos Gerais */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho (header) */
+header {
+    background-color: #333; /* Cor escura */
+    color: #fff; /* Fonte clara */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Menu de Navegação (nav) */
+nav {
+    background-color: #444; /* Um pouco mais claro que o header */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centraliza os itens */
+}
+
+nav li {
+    display: inline-block; /* Itens na horizontal */
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;  /*transição suave*/
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+
+
+/* Seção Principal (section#principal) e Subseções */
+#principal {
+    background-color: #f5f5dc; /* Bege pastel */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /*sombra suave (opcional)*/
+}
+
+.section-titulo {
+    background-color: #f0e68c; /* Cáqui pastel */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+}
+
+.section-titulo h2{
+    margin: 0;  /*Remove margem padrão do h2*/
+     color: #333; /*Cor mais escura para o título*/
+}
+
+
+.section-descricao {
+    background-color: #f8f8ff; /* Branco pastel (ligeiramente azulado) */
+    padding: 15px;
+    border-radius: 5px;
+     line-height: 1.6; /*Espaçamento entre linhas*/
+}
+
+.section-descricao p{
+    margin: 0; /*Remove margem padrão do p*/
+}
+
+
+/* Rodapé (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;  /*Para fixar no final (opcional)*/
+    bottom: 0;  /*Para fixar no final (opcional)*/
+    width: 100%; /*Para fixar no final (opcional)*/
+}
+
+footer p{
+    margin: 5px 0;  /*Margem pequena*/
+}
