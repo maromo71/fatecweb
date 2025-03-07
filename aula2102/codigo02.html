@@ -32,7 +32,7 @@
 
 
         <label for="textTelefone">Telefone para contato</label><br>
-        <input type="tel" name="textTelefone" placeholder="(99)9999-9999" /><br>
+        <input type="tel" name="textTelefone" pattern="\(\d{2}\)\d{4}-\d{4}" placeholder="(99)9999-9999" /><br>
 
 
         <fieldset>
@@ -45,7 +45,9 @@
 
         <label for="Observação">Obserções gerais</label><br>
         <textarea name="Observação" cols="30" rows="10"></textarea><br>
-
+        <!-- Apenas um exemplo de number 
+        <input type="number" name="numValor" min="0" max="100" step="10" /><br>
+        -->
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
 
