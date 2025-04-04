@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cálculo de Preço Final</title>
+</head>
+<body>
+  <h1>Simulador de Preço Final de Roupa</h1>
+
+  <label for="nome">Nome da peça:</label>
+  <input type="text" id="nome" required><br><br>
+
+  <label for="preco">Preço da etiqueta (R$):</label>
+  <input type="number" id="preco" required><br><br>
+
+  <label for="pagamento">Forma de pagamento:</label>
+  <select id="pagamento">
+    <option value="dinheiro">À vista no dinheiro (15% de desconto)</option>
+    <option value="debito">À vista no cartão de débito (10% de desconto)</option>
+    <option value="credito">À prazo no cartão de crédito (sem desconto)</option>
+    <option value="2x">Parcelado em 2x (5% de acréscimo)</option>
+    <option value="3x">Parcelado em 3x ou mais (10% de acréscimo)</option>
+  </select><br><br>
+
+  <button id="calcular">Calcular</button>
+
+  <h2>Resultado</h2>
+  <p id="saida"></p>
+
+  <script type="module">
+    import { calcularValorFinal } from './script.js';
+
+    document.getElementById('calcular').addEventListener('click', () => {
+      const nome = document.getElementById('nome').value;
+      const preco = parseFloat(document.getElementById('preco').value);
+      const forma = document.getElementById('pagamento').value;
+
+      //isNaN() verifica se um valor é um número
+      //!nome verifica se o valor é falso
+      if (!nome || isNaN(preco)) {
+        document.getElementById('saida').textContent = 'Preencha todos os campos corretamente.';
+        return;
+      }
+
+      const resultado = calcularValorFinal(preco, forma);
+
+      if (resultado.erro) {
+        document.getElementById('saida').textContent = resultado.mensagem;
+        return;
+      }
+
+      document.getElementById('saida').innerHTML =
+        `<strong>Peça:</strong> ${nome}<br>
+         <strong>Preço original:</strong> R$ ${resultado.precoOriginal}<br>
+         <strong>Forma de pagamento:</strong> ${forma}<br>
+         <strong>${resultado.tipo.charAt(0).toUpperCase() + resultado.tipo.slice(1)} aplicado:</strong> ${resultado.percentual}%<br>
+         <strong>Valor final a pagar:</strong> R$ ${resultado.valorFinal}`;
+    });
+  </script>
+</body>
+</html>
