@@ -16,6 +16,7 @@ function fatorial(n){
 
 function inverterNumero(num){
    const str = num.toString();//converte para string
+   const strInverse = str.split("").reverse().join("");//inverte 
    tam = str.length;//indica o tamanho da string
    let resultado = ""; //variavel resultado concatena o string invertido
    for(let i=tam-1; i>=0; i--){
