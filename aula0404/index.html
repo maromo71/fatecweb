@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Javascript</title>
 </head>
-
 <body>
     <h1>Calculadora Básica</h1>
     <form>
@@ -18,35 +16,20 @@
         <br><br>
         <label for="operador">Operação:</label>
         <select id="operador" name="operador" required>
-            <option value="somar">Somar</option>
-            <option value="subtrair">Subtrair</option>
-            <option value="multiplicar">Multiplicar</option>
-            <option value="dividir">Dividir</option>
+            <option value="+">Somar</option>
+            <option value="-">Subtrair</option>
+            <option value="*">Multiplicar</option>
+            <option value="/">Dividir</option>
         </select>
         <br><br>
-        <button type="button" id="btnCalcular">Calcular</button>
+        <button type="button" onclick="calcular()">Calcular</button>
         <br><br>
         <p id="resultado">
-
+            
         </p>
-
-
     </form>
 
-    <script type="module">
-        import { calcular } from './calculadora.js'; // deve estar escrito exatamente assim
+    <script src="script.js" type="module"></script>
     
-        document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById("btnCalcular").addEventListener("click", () => {
-                const num1 = parseFloat(document.getElementById("num1").value);
-                const num2 = parseFloat(document.getElementById("num2").value);
-                const operador = document.getElementById("operador").value;
-    
-                const resultado = calcular(num1, num2, operador);
-                document.getElementById("resultado").textContent = "Resultado: " + resultado;
-            });
-        });
-    </script>
 </body>
-
 </html>
