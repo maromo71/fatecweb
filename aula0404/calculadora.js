@@ -7,11 +7,12 @@ export function calcular(num1, num2, op){
         case '*':
             return num1 * num2;
         case '/':    
-            return num1 / num2;
+            return num2==0 ? 'Erro: Divisão por zero!' : num1 / num2;
         default:
             return 'Operador inválido!';
     }
 }
+
 
 //por enquanto. Exemplo de uso da função calcular
 //let num1 = 10;
