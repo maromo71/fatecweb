@@ -1,4 +1,4 @@
-export default function calcular(num1, num2, op){
+export function calcular(num1, num2, op){
     switch(op){
         case '+':
             return num1 + num2;
@@ -18,3 +18,5 @@ export default function calcular(num1, num2, op){
 //let num2 = 5;
 //let opcao = '/';
 //console.log("Resultado da operação: " + calcular(num1, num2, opcao));
+
+  
