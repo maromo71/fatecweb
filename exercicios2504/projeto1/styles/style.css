@@ -1,0 +1,13 @@
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 200px;
+    margin: 50px auto;
+    }
+    button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    }

@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 300px;
+  margin: 50px auto; /* Centraliza */
+}
+/* Estilize o input para que se adapte ao container*/
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  width: 90%; /* Usa quase todo o espaço disponível no container */
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
