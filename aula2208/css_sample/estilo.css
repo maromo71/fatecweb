@@ -1,0 +1,45 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+p {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+/* Seletores de Classe */
+.homem-aranha-destaque{
+    width: 100%;
+    height: 100%;
+}
+.destaque {
+    background-color: yellow;
+    font-weight: bold;
+}
+/* Seletores de ID - usa-se um # */
+#homem-aranha {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30%;
+    height: 30%;
+   
+    
+}
+#importante {
+    color: red;
+    font-size: 18px;
+}
+/* Seletores de atributos */
+[data-custom="special"] {
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid green;
+    font-style: italic;
+    padding: 10px;
+}
+/* Seletor universal */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}

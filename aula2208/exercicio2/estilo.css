@@ -1,0 +1,61 @@
+.container {
+    position: relative;
+}
+
+.block {
+    display: block;
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inline {
+    display: inline;
+    background-color: #aaf;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #afa;
+}
+
+.relative {
+    position: relative;
+    background-color: #faa;
+    top: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    background-color: #faf;
+    padding: 10px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #ffa;
+    padding: 10px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #aff;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+    background-color: #afa;
+    padding: 10px;
+}
