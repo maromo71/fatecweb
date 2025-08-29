@@ -2,6 +2,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
 }
+h1::before {
+    content: "😊"
+}
 .container {
     display: grid;
     margin: 0% 20% 0% 20%;
@@ -12,11 +15,12 @@ button{
     border: 1px solid black;
     font-size: 16px;
     border-radius: 5px;
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 40px;
+    transition: background-color 0.9s ease;
 }
 button:hover{
-    background-color:rgba(175, 199, 108, 0.992)
+    background-color:rgba(175, 199, 108, 0.992);
 }
 input {
     font-size: 1.2rem;
