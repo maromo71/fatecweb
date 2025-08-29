@@ -1,0 +1,10 @@
+span {
+    color: brown;
+    background-color: bisque;
+    font-size: 30px;
+}
+span:hover {
+    color: black;
+    background-color: yellowgreen;
+    font-size: 30px;
+}

@@ -1,0 +1,11 @@
+.flex-container {
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap-reverse;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    
+}

@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+.container {
+    display: grid;
+    margin: 0% 20% 0% 20%;
+    padding: 10px;
+    grid-template-columns: auto;
+}
+button{
+    border: 1px solid black;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+button:hover{
+    background-color:rgba(175, 199, 108, 0.992)
+}
+input {
+    font-size: 1.2rem;
+    background-color: rgba(227, 230, 233, 0.992);
+}
+input:focus {
+    background-color: rgba(167, 200, 235, 0.992);
+}
