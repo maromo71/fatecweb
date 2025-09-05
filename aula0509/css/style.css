@@ -1,0 +1,10 @@
+body {
+    padding-top: 70px;
+}
+.linhaCinza {
+    background-color: gray;
+}
+.linhaPersonalizada {
+    background-color: red;
+    padding: 10px 0px 10px 0px;
+}
