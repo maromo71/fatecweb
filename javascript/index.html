@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Botão</title>
+</head>
+
+<body>
+    <h1 class="titulo">Titulo</h1>
+    <h2 class="titulo">Subtitulo</h2>
+    <button>Clique aqui</button>
+    <script>
+        const titulos = document.getElementsByClassName('titulo')
+        for(let i=0; i<titulos.length; i++){
+            alert(titulos[i].textContent)
+        } 
+        const botao = document.querySelector('button');
+        botao.addEventListener('click', () => {
+            alert("Olá turma!!!")
+        })
+    </script>
+</body>
+
+</html>
