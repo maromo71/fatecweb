@@ -1,0 +1,9 @@
+.random-container {
+    width: 300px;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+
+}

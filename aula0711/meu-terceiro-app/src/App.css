@@ -1,0 +1,9 @@
+body{
+    
+    display: flex; /* Habilita o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o body tenha a altura total da viewport */
+    margin: 0; /* Remove margem padrão do body */
+}
+    
