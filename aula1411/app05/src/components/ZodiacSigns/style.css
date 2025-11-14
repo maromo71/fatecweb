@@ -1,0 +1,9 @@
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
